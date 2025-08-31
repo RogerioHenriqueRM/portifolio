@@ -1,0 +1,77 @@
+/* ============================= */
+/* Sobre Mim - Estrutura de imagem e texto */
+/* ============================= */
+
+/* Container da imagem do sobre-mim */
+.sobre-mim .imagem-sobre-mim {    
+    max-width: 40%;        /* Ocupa até 40% da largura do container */
+    padding: 0 15px;       /* Espaçamento horizontal */
+}
+
+/* Box interno da imagem */
+.sobre-mim .imagem-sobre-mim .img-box {
+    padding: 15px;         /* Espaçamento interno */
+    border-radius: 5px;    /* Bordas levemente arredondadas */
+    text-align: center;    /* Centraliza a imagem */
+}
+
+/* Estilização da imagem dentro do box */
+.sobre-mim .imagem-sobre-mim img {
+    border: 10px solid transparent; /* Borda transparente */
+    border-radius: 5px;             /* Bordas arredondadas */
+}
+
+/* Container das informações do "sobre-mim" */
+.sobre-mim .informacoes-sobre-mim {    
+    max-width: 60%;       /* Ocupa até 60% da largura */
+    padding: 0 25px;      /* Espaçamento horizontal */
+    align-self: center;   /* Centraliza verticalmente dentro do flex */
+}
+
+/* Container dos botões dentro do "sobre-mim" */
+.sobre-mim .informacoes-sobre-mim .botoes {
+    margin-top: 50px;     /* Espaçamento superior em relação aos parágrafos */
+}
+
+/* Estilização dos parágrafos */
+.sobre-mim .informacoes-sobre-mim p {
+    font-size: 1.8rem;    /* Tamanho da fonte */
+    font-weight: 300;     /* Peso leve */
+    margin-bottom: 20px;  /* Espaço abaixo de cada parágrafo */
+}
+
+/* ============================= */
+/* Ajustes responsivos para telas médias */
+/* ============================= */
+@media(max-width: 1280px) { 
+    .sobre-mim .row{
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .sobre-mim .imagem-sobre-mim {        
+        max-width: 100%;                   /* Imagem ocupa toda a largura */
+        padding: 0 var(--mobile-padding); /* Padding baseado na variável mobile */
+        margin-bottom: 50px;               /* Espaçamento inferior */
+    }
+
+    .sobre-mim .informacoes-sobre-mim {  
+        padding: 0 var(--mobile-padding); /* Padding horizontal responsivo */
+        text-align: center;               /* Centraliza o texto */
+    }
+
+    /* Remove sombras internas em telas menores */
+    .sobre-mim .imagem-sobre-mim .inner-shadow {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+/* ============================= */
+/* Ajustes responsivos para telas pequenas */
+/* ============================= */
+@media(max-width:768px){
+    .sobre-mim .informacoes-sobre-mim {  
+        max-width: 100%;                   /* Informações ocupam 100% da largura em telas pequenas */
+    }
+}

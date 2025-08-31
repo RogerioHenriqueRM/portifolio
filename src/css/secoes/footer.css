@@ -1,0 +1,22 @@
+/* ============================= */
+/* FOOTER - Rodapé do site */
+/* ============================= */
+.footer {
+    margin-top: 7rem;                          /* Espaço acima do footer */
+    text-align: center;                         /* Centraliza o conteúdo */
+    background-color: var(--cor-fundo-cinza-claro); /* Cor de fundo do rodapé */
+}
+
+/* Container interno do footer */
+.footer .container {
+    padding: 5rem 0;                            /* Espaçamento interno vertical */
+}
+
+/* Título do footer */
+.footer h2 {
+    font-family: var(--fonte-secundaria);      /* Fonte secundária */
+    font-size: var(--fonte-normal);            /* Tamanho da fonte */
+    font-weight: 700;                           /* Peso da fonte */
+    letter-spacing: 2px;                        /* Espaço entre letras */
+    margin-bottom: 20px;                        /* Espaço abaixo do título */
+}

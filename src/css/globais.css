@@ -1,0 +1,119 @@
+/* ============================= */
+/* Importação de fontes externas */
+/* ============================= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"); /* Fonte principal */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");      /* Fonte secundária */
+
+
+/* ============================= */
+/* Configuração geral da página */
+/* ============================= */
+html {
+    font-size: 62.5%;              /* Facilita trabalhar com rem (1rem = 10px) */
+    color: var(--cor-branca);      /* Define cor do texto padrão */
+    font-weight: 300;              /* Peso padrão da fonte */
+    scroll-behavior: smooth;       /* Rolagem suave ao clicar em links de âncora */
+}
+  
+body {
+    background-color: var(--cor-fundo-cinza-escuro); /* Cor de fundo principal */
+    font-family: var(--fonte-primaria);              /* Fonte padrão do site */
+    font-size: var(--fonte-normal);                  /* Tamanho de fonte base */
+    padding-top: 90px;                               /* Espaço para header fixo */
+}
+
+
+/* ============================= */
+/* Estrutura de containers e layouts */
+/* ============================= */
+.container {
+    max-width: 1140px; /* Largura máxima centralizada */
+    margin: auto;      /* Centraliza no meio da tela */
+}
+  
+.row {
+    display: flex;      /* Cria um layout flexível */
+    flex-wrap: wrap;    /* Quebra linha quando necessário */
+}
+  
+.justify-content-between {
+    justify-content: space-between; /* Espaçamento entre itens */
+}
+  
+.alinhar-itens-no-centro {
+    align-items: center; /* Centraliza os itens no eixo vertical */
+}
+
+
+/* ============================= */
+/* Redes sociais */
+/* ============================= */
+.redes-sociais a {
+    display: inline-block;         /* Mantém os ícones em linha */
+    width: 40px;                   /* Largura do botão */
+    height: 40px;                  /* Altura do botão */
+    font-size: 1.8rem;              /* Tamanho do ícone */
+    text-align: center;             /* Centraliza o ícone */
+    color: var(--cor-branca);       /* Cor do ícone */
+    margin: 0 4px;                  /* Espaço entre os ícones */
+    border-radius: 10%;             /* Bordas levemente arredondadas */
+    transition: all 0.3s ease;      /* Animação suave ao hover */
+}
+  
+.redes-sociais a i {
+    line-height: 40px; /* Centraliza verticalmente o ícone */
+}
+  
+.redes-sociais a:hover {
+    color: var(--cor-primaria); /* Muda cor no hover */
+}
+
+
+/* ============================= */
+/* Sombras para efeitos visuais */
+/* ============================= */
+.outer-shadow {
+    box-shadow: 3px 3px #222327, -3px -3px 3px #454545; /* Sombra externa */
+}
+  
+.inner-shadow {
+    box-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #454545; /* Sombra interna */
+}
+
+
+/* ============================= */
+/* Seções do site */
+/* ============================= */
+.section {
+    padding: 7rem 0 7rem; /* Espaçamento interno */
+}
+  
+.section-title {
+    text-align: center;   /* Centraliza título */
+    flex: 0 0 100%;       /* Ocupa toda a largura */
+    max-width: 100%;      /* Garante limite máximo */
+    padding: 60px 0;      /* Espaçamento superior/inferior */
+}
+  
+.section-title h2 {
+    font-size: var(--fonte-gigante); /* Tamanho grande */
+    font-weight: 500;                /* Peso médio */
+    text-transform: uppercase;       /* Texto em maiúsculo */
+}
+
+
+/* ============================= */
+/* Botões personalizados */
+/* ============================= */
+.botao {
+    font-size: var(--fonte-grande);     /* Tamanho da fonte */
+    padding: 10px 20px;                 /* Espaçamento interno */
+    border-radius: 20px;                /* Bordas arredondadas */
+    transition: all .3s ease;           /* Transição suave */
+    background-color: var(--cor-primaria); /* Cor padrão do botão */
+}
+  
+.botao:hover {
+    background-color: var(--cor-secundaria); /* Cor ao passar o mouse */
+    color: var(--cor-branca);                /* Cor do texto no hover */
+}

@@ -1,0 +1,32 @@
+/* ===================== */
+/* Paleta de Cores */
+/* ===================== */
+:root {
+    --cor-primaria: #241178;              /* Cor principal (azul escuro/roxo) usada em destaques */
+    --cor-secundaria: #FD6C22;           /* Cor secundária (laranja) para contraste */
+    --cor-branca: #fff;                  /* Branco padrão */
+    --cor-fundo-escuro: #1a1f24;         /* Fundo geral escuro */
+    --cor-fundo-cinza-escuro: #282828;   /* Cinza bem escuro para seções */
+    --cor-fundo-cinza-claro: #3b3b3b;    /* Cinza intermediário (claro em relação ao escuro) */
+}
+
+/* ===================== */
+/* Fontes e Tamanhos */
+/* ===================== */
+:root {
+    --fonte-primaria: 'Poppins', sans serif;   /* Fonte principal para textos */
+    --fonte-secundaria: 'Raleway', sans serif; /* Fonte secundária (pode usar em títulos) */
+
+    /* Escalas de fonte */
+    --fonte-gigante: 4.5rem;       /* Muito grande - destaque principal */
+    --fonte-extra-grande: 3rem;    /* Títulos de seções */
+    --fonte-grande: 2.4rem;        /* Subtítulos */
+    --fonte-normal: 1.6rem;        /* Texto padrão */
+}
+
+/* ===================== */
+/* Espaçamento Mobile */
+/* ===================== */
+:root {
+    --mobile-padding: 30px;  /* Padding padrão para telas menores */
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o tipo de documento HTML e o idioma como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Garante compatibilidade com versões antigas do IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsividade em dispositivos móveis -->
+  <title>Rogério Henrique Rocha de Matos - Desenvolvedor Full Stack</title> <!-- Título da aba do navegador -->
+
+  <!-- Importação de estilos externos -->
+  <link rel="stylesheet" href="src/css/font-awesome.css" /> <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="src/css/reset.css" /> <!-- Reset CSS para padronizar estilos -->
+
+  <!-- Estilos globais -->
+  <link rel="stylesheet" href="src/css/globais.css" />
+  <link rel="stylesheet" href="src/css/variaveis.css" />
+  <link rel="stylesheet" href="src/css/secoes/header.css" />
+  <link rel="stylesheet" href="src/css/secoes/home.css" />
+  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
+  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
+  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
+  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+
+  <!-- Biblioteca de ícones Devicon (para ícones de linguagens) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+</head>
+
+<!-- Ícone da aba do navegador -->
+<link rel="shortcut icon" href="src/favicons/favicon.ico" type="image/x-icon">
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between alinhar-itens-no-centro">
+        <!-- Logo -->
+        <a href="#home">
+          <h1 class="logo"><img src="src/imagens/logo.png" alt="Logo de Rogério Henrique Rocha de Matos"></h1>
+        </a>
+        <!-- Menu de navegação -->
+        <nav>
+          <!-- Checkbox para controle do menu hamburguer (mobile) -->
+          <input id="menu-hamburguer" type="checkbox" />
+
+          <!-- Label que ativa o menu hamburguer -->
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+
+          <!-- Itens do menu -->
+          <ul>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO HOME -->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="row full-screen alinhar-itens-no-centro">
+        <!-- Texto de apresentação -->
+        <div class="texto-home">
+          <p>Olá ,</p>
+          <h1>Sou o Rogério Henrique Rocha de Matos</h1>
+          <h2>Desenvolvedor Full Stack</h2>
+
+          <!-- Links para redes sociais -->
+          <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/rogerio-henrique-rocha-de-matos/" class="outer-shadow"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/65992996219" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/RogerioHenriqueRM" class="outer-shadow"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/rog.henr/" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Imagem de perfil -->
+        <div class="img-home">
+          <div class="img-box inner-shadow">
+            <img class="outer-shadow" src="src/imagens/portifolio.jpeg"
+              alt="Imagem de portfólio de Rogério Henrique Rocha de Matos" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linha divisória -->
+  <hr>
+
+  <!-- SEÇÃO SOBRE MIM -->
+  <section class="sobre-mim section" id="sobre-mim">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Sobre mim</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Foto -->
+        <div class="imagem-sobre-mim">
+          <div class="img-box inner-shadow">
+            <img src="src/imagens/🀄.jpg" alt="foto de Rogério Henrique Rocha de Matos" class="outer-shadow" />
+          </div>
+        </div>
+        <!-- Texto de apresentação -->
+        <div class="informacoes-sobre-mim">
+          <p>
+            <strong>Olá! Me chamo Rogério Henrique Rocha de Matos e sou um desenvolvedor Full Stack em
+              formação!</strong>
+            Gosto MUITO da área de tecnologia, jogos, programação e cultura geek. Estou sempre empenhado em aprender e
+            compartilhar conhecimento.
+          </p>
+
+          <p>
+            Estou sempre me desafiando com novos projetos e participando de comunidades de programação para buscar
+            feedback de outros desenvolvedores mais experientes na área.
+          </p>
+
+          <p>
+            Gosto de relacionar programação com jogos, filmes, séries, animes e com outras coisas que eu gosto.
+          </p>
+
+          <!-- Botão para baixar currículo -->
+          <div class="botoes">
+            <a target="_blank" href="src/arquivos/Currículo ROGÉRIO HENRIQUE ROCHA DE MATOS (4).pdf"
+              class="botao outer-shadow">Veja meu Currículo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO HABILIDADES -->
+  <section class="habilidades section" id="habilidades">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Habilidades</h2>
+        </div>
+      </div>
+
+      <!-- Blocos de habilidades -->
+      <div class="container-habilidades">
+        <div class="informacoes javascript">
+          <div class="logo">
+            <i class="devicon devicon-javascript-plain" id="javascript"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Crio interatividade em páginas, consumo APIs e desenvolvo aplicações dinâmicas no front-end.</p>
+        </div>
+
+        <div class="informacoes html">
+          <div class="logo">
+            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Base da web. Estruturo páginas e aplico boas práticas de semântica para acessibilidade e SEO.</p>
+        </div>
+
+        <div class="informacoes css">
+          <div class="logo">
+            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Estilizo páginas com responsividade, flexbox, grid e animações modernas para criar layouts atraentes.</p>
+        </div>
+
+        <div class="informacoes kotlin">
+          <div class="logo">
+            <i class="devicon devicon-kotlin-plain-wordmark" id="kotlin"></i>
+          </div>
+          <h3>Kotlin</h3>
+          <p>Desenvolvo aplicações Android modernas com Kotlin, aplicando boas práticas de código limpo e integração com
+            APIs e bibliotecas.</p>
+        </div>
+
+        <div class="informacoes python">
+          <div class="logo">
+            <i class="devicon devicon-python-plain-wordmark" id="python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>Desenvolvo scripts e aplicações utilizando Python, com foco em automação, análise de dados e
+            desenvolvimento back-end com frameworks como Django e Flask.</p>
+        </div>
+
+        <div class="informacoes git">
+          <div class="logo">
+            <i class="devicon devicon-git-plain" id="git"></i>
+          </div>
+          <h3>Git & GitHub</h3>
+          <p>Versiono meus projetos, trabalho em equipe com pull requests e mantenho repositórios organizados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PROJETOS -->
+  <section class="projetos section" id="projetos">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Meus projetos</h2>
+        </div>
+      </div>
+
+      <!-- Cada projeto com imagem e link -->
+      <div class="container-projetos">
+        <div class="projeto">
+          <a href="https://github.com/RogerioHenriqueRM/Reserva-Chaves-Senai">
+            <img src="src/imagens/download (29).jpg" alt="Reserva de chaves SENAI" />
+            <h3>Reserva de chaves SENAI</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando KOTLIN, Jetpack Compose</p>
+              <p>🔗 Ver no GitHub </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/RogerioHenriqueRM/praticaMiniSistemaLoja.py">
+            <img src="src/imagens/download (29).jpg" alt="mini sistema de lojas PRATICA" />
+            <h3>mini sistema de lojas <em><strong>PRATICA</strong></em></h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando PYTHON</p>
+              <p>🔗 Ver no GitHub </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/RogerioHenriqueRM/analise-de-base-de-dados">
+            <img src="src/imagens/download (29).jpg" alt="Analise de base de dados" />
+            <h3>Projeto 3</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando PYTHON, JUPYTER</p>
+              <p>🔗 Ver no GitHub </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/RogerioHenriqueRM/autom-o-pyton">
+            <img src="src/imagens/download (29).jpg" alt="AUTOMAÇÃO" />
+            <h3>Automação utilizando python</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando PYTHON</p>
+              <p>🔗 Ver no GitHub </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <h2>Meus contatos</h2>
+      <div class="redes-sociais">
+        <a href="https://www.linkedin.com/in/rogerio-henrique-rocha-de-matos/" class="outer-shadow"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/65992996219" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/RogerioHenriqueRM" class="outer-shadow"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/rog.henr/" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

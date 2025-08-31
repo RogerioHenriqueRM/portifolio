@@ -1,0 +1,80 @@
+/* ============================= */
+/* Projetos - Container e Grid */
+/* ============================= */
+
+/* Container que organiza os projetos em grid */
+.projetos .container-projetos {
+    display: grid;        
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cria colunas flexíveis que se ajustam */
+    margin: 0 auto;        /* Centraliza o container */
+    grid-gap: 20px;        /* Espaçamento entre os cards */
+}
+
+/* ============================= */
+/* Responsividade para telas médias */
+/* ============================= */
+@media(max-width: 1280px) { 
+    .projetos .container-projetos {
+        padding: 0 var(--mobile-padding); /* Padding horizontal em telas menores */
+    }
+}
+
+/* ============================= */
+/* Estilização dos cards de projeto */
+/* ============================= */
+.projetos .container-projetos .projeto {
+    border-radius: 5px;                   /* Bordas arredondadas do card */
+    transition: all 0.3s ease;            /* Transição suave */
+    -moz-transition: all .3s ease;        /* Compatibilidade Firefox */
+    -o-transition: all .3s ease;          /* Compatibilidade Opera */
+    -webkit-transition: all .3s ease;     /* Compatibilidade Chrome/Safari */
+    position: relative;                   /* Necessário para posicionar info do projeto */
+}
+
+/* Efeito hover: diminui opacidade ao passar mouse */
+.projetos .container-projetos .projeto:hover,
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+    opacity: 0.8;
+}
+
+/* Estilização da imagem do projeto */
+.projetos .container-projetos .projeto img {
+    border-top-left-radius: 5px;  /* Bordas arredondadas superiores */
+    border-top-right-radius: 5px; /* Bordas arredondadas superiores */
+    height: 100%;                 /* Ocupa toda a altura do card */
+}
+
+/* Informações que aparecem sobre o card */
+.projetos .container-projetos .projeto .informacoes-projeto {
+    padding: 20px 20px;                  /* Espaçamento interno */
+    background-color: var(--cor-fundo-escuro); /* Fundo escuro */
+    position: absolute;                  /* Sobreposição sobre o card */
+    top: 0;                              /* Começa no topo do card */
+    width: 100%;                         /* Ocupa toda largura do card */
+    height: 100%;                        /* Ocupa toda altura do card */
+    opacity: 0;                           /* Inicialmente invisível */
+    transition: all .3s ease;            /* Transição suave de aparecimento */
+    border-top-left-radius: 4px;         /* Bordas arredondadas */
+    border-top-right-radius: 4px;        /* Bordas arredondadas */
+}
+
+/* Estilo do segundo parágrafo dentro das informações do projeto */
+.projetos .container-projetos .projeto .informacoes-projeto p:nth-child(2) {
+    font-weight: 500;     /* Peso médio */
+    margin-top: 10px;     /* Espaço superior */
+    font-size: 1.4rem;    /* Tamanho da fonte */
+}
+
+/* Estilização do título do projeto */
+.projetos .container-projetos .projeto h3 {
+    font-size: 2rem;                      /* Tamanho da fonte */
+    font-weight: 500;                      /* Peso médio */
+    position: absolute;                    /* Posicionado sobre a imagem */
+    opacity: 0.7;                          /* Transparência parcial */
+    background-color: var(--cor-fundo-escuro); /* Fundo escuro */
+    width: 100%;                           /* Largura total do card */
+    padding-left: 20px;                    /* Espaçamento interno à esquerda */
+    padding-bottom: 10px;                  /* Padding inferior */
+    padding-top: 10px;                     /* Padding superior */
+    bottom: 0;                             /* Posicionado na base do card */
+}

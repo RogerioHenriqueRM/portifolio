@@ -1,0 +1,73 @@
+/* ============================= */
+/* Home - Layout da tela inicial */
+/* ============================= */
+
+/* Container que ocupa toda a tela (full-screen) */
+.home .full-screen {
+    padding: 50px 0;      /* Espaçamento vertical */
+    min-height: 86vh;     /* Altura mínima de 86% da viewport */
+}
+
+/* Estilização do texto principal */
+.home .texto-home {
+    letter-spacing: 2px;  /* Espaçamento entre letras */
+}
+
+/* Divisão do layout entre texto e imagem */
+.home .texto-home, .home .img-home {
+    flex: 0 0 50%;        /* Ocupa 50% da largura, sem crescer nem encolher */
+    max-width: 50%;       /* Limita a largura máxima a 50% */
+    padding: 0 15px;      /* Padding horizontal */
+}
+
+/* ============================= */
+/* Responsividade para telas médias */
+/* ============================= */
+@media(max-width: 1280px) {
+    .home .texto-home, .home .img-home {
+        flex: 0 0 100%;              /* Ocupa 100% da largura em telas menores */
+        max-width: 100%;             /* Limite de largura 100% */
+        text-align: center;          /* Centraliza o texto */
+        padding: 0 var(--mobile-padding); /* Padding responsivo horizontal */
+    }
+    .home .img-home {
+        margin-top: 50px;            /* Espaço superior da imagem em telas menores */
+    }
+}
+
+/* ============================= */
+/* Estilização da caixa de imagem */
+.home .img-home .img-box {
+    max-width: 450px;      /* Largura máxima da imagem */
+    margin: auto;          /* Centraliza horizontalmente */
+    border-radius: 10%;    /* Bordas arredondadas */
+}
+
+/* Imagem dentro da caixa */
+.home .img-home .img-box img {
+    width: 100%;                 /* Ocupa toda a largura do box */
+    border-radius: 10%;          /* Bordas arredondadas */
+    border: 10px solid transparent; /* Borda transparente para efeito visual */
+}
+
+/* ============================= */
+/* Estilização do texto da Home */
+.home .texto-home p {
+    font-family: var(--fonte-secundaria); /* Fonte secundária */
+    font-size: var(--fonte-grande);       /* Tamanho da fonte */
+    margin-bottom: 10px;                  /* Espaço abaixo do parágrafo */
+}
+
+.home .texto-home h1 {
+    font-family: var(--fonte-secundaria); /* Fonte secundária */
+    font-size: var(--fonte-gigante);      /* Tamanho gigante */
+    font-weight: 700;                     /* Peso bold */
+    margin-bottom: 20px;                  /* Espaço abaixo do título */
+}
+
+.home .texto-home h2 {
+    font-family: var(--fonte-secundaria); /* Fonte secundária */
+    font-size: var(--fonte-grande);       /* Tamanho grande */
+    letter-spacing: 2px;                  /* Espaçamento entre letras */
+    margin-bottom: 30px;                  /* Espaço inferior */
+}

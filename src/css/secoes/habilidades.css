@@ -1,0 +1,52 @@
+/* ============================= */
+/*  HABILIDADES - Container principal */
+/* ============================= */
+.habilidades .container-habilidades {    
+    text-align: center;                  /* Centraliza o conteúdo */
+    display: flex;                       /* Utiliza flexbox */
+    justify-content: center;             /* Centraliza horizontalmente os itens */
+    flex-direction: row;                 /* Itens em linha */
+    flex-wrap: wrap;                     /* Quebra linha quando necessário */
+}
+
+/* Blocos de cada habilidade */
+.habilidades .container-habilidades .informacoes{
+    max-width: 350px;                    /* Largura máxima do card */
+    padding: 40px 20px;                  /* Espaçamento interno */
+}
+
+/* Transição suave para textos e ícones ao passar mouse */
+.habilidades .container-habilidades .informacoes p,
+.habilidades .container-habilidades .informacoes h3,
+.habilidades .container-habilidades .informacoes .logo i{
+    transition: all .3s ease;            /* Transição suave */
+    -moz-transition: all .3s ease;       /* Para Firefox */
+    -o-transition: all .3s ease;         /* Para Opera */
+    -webkit-transition: all .3s ease;    /* Para Safari/Chrome */
+}
+
+/* Efeito hover nas habilidades */
+.habilidades .container-habilidades .informacoes:hover p,
+.habilidades .container-habilidades .informacoes:hover h3,
+.habilidades .container-habilidades .informacoes:hover .logo i{
+    color: var(--cor-primaria);          /* Muda a cor para a cor primária */
+}
+
+/* Título da habilidade */
+.habilidades .container-habilidades .informacoes h3 {
+    font-size: var(--fonte-extra-grande); /* Tamanho do título */
+    font-weight: 500;                     /* Peso da fonte */
+    margin-bottom: 20px;                  /* Espaço abaixo do título */
+    color: var(--cor-primaria);           /* Cor inicial do título */
+}
+
+/* Descrição da habilidade */
+.habilidades .container-habilidades .informacoes p {
+    font-size: 1.8rem;                    /* Tamanho da fonte */
+    font-family: var(--fonte-secundaria); /* Fonte secundária */
+}
+
+/* Ícone da habilidade */
+.habilidades .container-habilidades .informacoes .logo i {
+    font-size: 8rem;                      /* Tamanho grande do ícone */
+}

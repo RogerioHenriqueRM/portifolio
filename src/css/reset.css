@@ -1,0 +1,28 @@
+/* ============================= */
+/*  Reset e ajustes globais */
+/* ============================= */
+
+/* Remove margens, espaçamentos, bordas e define box-sizing */
+* {
+    margin: 0;                 /* Remove margem padrão de todos os elementos */
+    padding: 0;                /* Remove espaçamento interno padrão */
+    border: none;              /* Remove bordas padrão */
+    outline: none;             /* Remove contorno padrão (ex: ao clicar em inputs) */
+    box-sizing: border-box;    /* Inclui padding e border no cálculo da largura/altura */
+}
+
+/* Estilização de links */
+a {
+    text-decoration: none;     /* Remove sublinhado padrão */
+    color: var(--cor-branca);  /* Define cor do link como branco */
+}
+
+/* Remove marcadores das listas */
+ul {
+    list-style: none;          /* Remove os pontinhos ou números padrão das listas */
+}
+
+/* Garante que imagens nunca ultrapassem o container */
+img {
+    max-width: 100%;           /* Faz a imagem se ajustar ao tamanho do elemento pai */
+}
